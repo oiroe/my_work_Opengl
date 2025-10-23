@@ -2,6 +2,8 @@
 
 An OpenGL demonstration program featuring a rotating 3D cube illuminated by two independently orbiting point lights with distinct colors.
 
+[![Video demo](https://img.youtube.com/vi/MiCzlgjDbCw/0.jpg)](https://youtu.be/MiCzlgjDbCw)
+
 ## Overview
 
 This program renders a 3D scene consisting of a rotating cube lit by two colored point lights that orbit around it in opposite directions. When executed, you'll observe:
