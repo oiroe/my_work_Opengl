@@ -43,12 +43,7 @@ Before building this program, ensure you have the following:
 
 **On Linux or WSL (Windows Subsystem for Linux):**
 ```bash
-gcc main.c -o main -lglfw -lGL -lm -ldl -lstdc++
-```
-
-**Using an existing build system:**
-```bash
-make
+g++ main.c glad.c -Iinclude -lglfw -ldl -lGL -o main
 ```
 
 ### Running the Program
@@ -195,27 +190,3 @@ These matrices are computed manually using custom functions, demonstrating the u
    - Issue draw call
    - Swap front and back buffers
 6. Clean up resources and terminate
-
-## Learning Objectives
-
-This program demonstrates several fundamental computer graphics concepts:
-
-- **3D Transformations**: Understanding how matrices manipulate objects in 3D space
-- **Lighting Models**: Implementation of the Phong reflection model's ambient and diffuse components
-- **Shader Programming**: Writing and compiling GLSL code for GPU execution
-- **Graphics Pipeline**: Understanding the flow from vertex data to final pixels
-- **Buffer Management**: Efficient use of GPU memory through VBOs and EBOs
-
-## Further Resources
-
-To deepen your understanding of the techniques used in this program:
-
-- **LearnOpenGL** (learnopengl.com): Comprehensive tutorials covering modern OpenGL concepts
-- **OpenGL Superbible**: Detailed reference for advanced OpenGL programming
-- **Real-Time Rendering**: Academic perspective on rendering algorithms and theory
-
----
-
-**Project Purpose**: Educational demonstration of OpenGL fundamentals and 3D graphics programming concepts.
-
-**Note**: This implementation prioritizes clarity and educational value over performance optimization. It's designed to make the underlying processes visible and understandable.
