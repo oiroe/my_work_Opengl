@@ -125,3 +125,5 @@ Most Linux distributions provide these through package managers. On Ubuntu/Debia
 ```bash
 sudo apt-get install libglfw3-dev libassimp-dev libglm-dev
 ```
+## Model Credit
+- Swimming man: [https//:www.mixamo.com](https://www.mixamo.com/)
