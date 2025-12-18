@@ -27,6 +27,9 @@ cmake ..
 make
 ```
 
+### Video demo
+https://github.com/user-attachments/assets/60192bc2-1d97-45fc-af56-1fefdd621398
+
 ### Running
 ```bash
 ./MyOpenGLProject
@@ -129,4 +132,5 @@ The project uses a state machine approach for managing animations:
 
 ## License
 Educational project for learning purposes.
+
 
