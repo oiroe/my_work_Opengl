@@ -5,7 +5,7 @@ This project demonstrates skeletal animation in OpenGL using the Assimp library.
 
 ## Features
 - **Model Loading**: Load 3D models with skeletal bone structure using Assimp
-- **Multiple Animations**: Support for Idle, Walking, Running, and Punch animations
+- **Multiple Animations**: Support for Idle, Walking, Punch, and Hip Hop Dancing animations
 - **Animation Blending**: Smooth transitions between different animation states
 - **Keyboard Controls**: Interactive animation switching via keyboard input
 - **Camera System**: Free-look camera with mouse and keyboard controls
@@ -41,7 +41,7 @@ cd ../bin
 - **Key 1**: Switch to Idle animation
 - **Key 2**: Switch to Walking animation
 - **Key 3**: Switch to Punch animation
-- **Key 4**: Switch to Running animation (if enabled)
+- **Key 4**: Switch to Hip Hop Dancing animation
 
 ### Camera Controls
 - **W/A/S/D**: Move camera forward/left/backward/right
@@ -61,11 +61,12 @@ assignment_4/
 ├── include/
 │   └── learnopengl/          # Helper classes (Model, Animation, Shader, etc.)
 └── resources/
-    ├── Remy/                 # Character model
-    ├── Idle/                 # Idle animation
-    ├── Strut_Walking/        # Walking animation
-    ├── Jab_Cross/            # Punch animation
-    └── Running/              # Running animation
+    ├── Remy/                 # Character model (Remy.dae)
+    ├── Idle/                 # Idle animation (Idle.dae)
+    ├── Strut_Walking/        # Walking animation (Strut Walking.dae)
+    ├── Jab_Cross/            # Punch animation (Jab_Cross.dae)
+    ├── Running/              # Running animation (Running.dae)
+    └── Hip Hop Dancing/      # Hip Hop Dancing animation (Hip Hop Dancing.dae)
 ```
 
 ## Technical Details
@@ -74,7 +75,8 @@ assignment_4/
 The project uses a state machine approach for managing animations:
 - **IDLE**: Default state
 - **IDLE_WALK/WALK_IDLE**: Transition states with blending
-- **IDLE_PUNCH/PUNCH_IDLE**: Attack animation transitions
+- **IDLE_PUNCH/PUNCH_IDLE**: Punch attack animation transitions
+- **IDLE_KICK/KICK_IDLE**: Hip Hop Dancing animation transitions
 - **WALK**: Continuous walking state
 
 ### Bone Transformations
