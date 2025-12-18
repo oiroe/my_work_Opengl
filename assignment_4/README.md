@@ -124,8 +124,9 @@ The project uses a state machine approach for managing animations:
 
 ## Credits
 - Character Model: Mixamo Remy character
-- Animations: Mixamo animation library
+- Animations: Mixamo animation library (https://www.mixamo.com/)
 - Framework: Based on LearnOpenGL tutorials
 
 ## License
 Educational project for learning purposes.
+
